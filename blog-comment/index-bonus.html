@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Bonus Blog Post Comment</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="handlebars-v4.0.5.js"></script> 
+        <script src="script-bonus.js"></script>
+
+        <script id="comment-template" type="text/x-handlebars-template">
+            <li>
+                <span class="btn-block">
+                    <button class="delete">X</button>
+                    <button class="edit">E</button>
+                </span>
+                <h3>
+                    <strong>{{cmtName}}</strong> 
+                    <span>{{cmtEmail}}</span>
+                </h3>
+                <p>{{cmtText}}</p>
+            </li>
+        </script>
+
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="container">
+           <div id="blogpost1">
+               <h1>Why programming is awesome!</h1>
+               <p>
+                    Programming is more sexy than ever. In the past, people who programmed were considered nerdy and unattractive, but now coding is a skill associated to successful and smart people. Coding is gradually consolidating itself the most important skill to dominate in the 21th century. The ability to read and write code is now the same as what reading and writing text was in the medieval ages: the few people that can do it are greatly benefited with an enriched life experience.
+
+                    Virtually all fields are being changed by computers, and us coders are the select group that are able to implement these changes. Becoming a proficient programmer is, however, a journey. It’s a bit like painting: you have to practice a lot before making quality work, regardless if you know all about brushes, colors and canvases. As you take on the journey, you’ll learn lots of tips, tricks, common practices and common knowledge–information that is usually unwritten and implied.
+                </p>
+                <form class="comment_form">
+                    <input type="text" class="comment_name" placeholder="name"/>
+                    <input type="text" class="comment_email" placeholder="email"/>
+                    <textarea class="comment_text" placeholder="Please insert a comment"></textarea>
+                    <input type="submit" class="btn"/>
+                </form>
+                <h2>Comments</h2>
+                <ul class="comments">
+                </ul>
+            </div>
+            
+            <div id="blogpost2">
+               <h1>What is lorem ipsum!</h1>
+               <p>
+Lectus ultrices natoque vel eros vut, phasellus nec. Vut elit urna tincidunt. Augue magna elit magna. Ut, natoque, dapibus in nisi, magnis montes? Tempor porttitor pulvinar. Tortor egestas! Et tincidunt adipiscing ultrices, augue non turpis massa! Risus aliquam in, porta. Magna elementum rhoncus nec arcu? Aenean scelerisque integer, egestas vel elementum quis sit vel! Odio dignissim tempor, sociis a pulvinar! Enim habitasse cursus tincidunt ut ultrices sed pid a nunc, facilisis urna, vut integer nisi ultrices. Habitasse! Vut in scelerisque diam! Quis turpis? Ridiculus. Eu massa et magna quis, pellentesque, nec, nec. Tortor ac montes mauris sagittis ridiculus, enim. Amet diam cursus porttitor sagittis sit, pulvinar sed rhoncus. Lundium nisi. Pellentesque nec? Auctor facilisis, cum cras adipiscing! Sed, dolor placerat.
+
+In diam vel, magna adipiscing! Ac elementum risus mauris lectus aliquet, aliquet, placerat in, magna. Dictumst lundium mid auctor, lundium urna sagittis ac, risus, vut porttitor, facilisis? Placerat turpis adipiscing lectus? Porta! Et? Lundium et. Placerat et vel! Augue nec porta scelerisque tempor porta mattis, rhoncus, lacus, vut magnis in, lorem! Etiam, pellentesque! Ultrices sed! Lundium quis rhoncus proin, auctor platea porta pid sit tristique ac aenean egestas habitasse ac vel, phasellus nec tortor, porta nunc auctor, augue. Parturient, dolor pulvinar etiam. A mauris habitasse ultrices, elit, magnis tempor, eros nunc natoque montes! Ac in, in, tristique, parturient tincidunt, in lacus ut pid augue adipiscing aliquet magna! Nascetur odio? Magna phasellus nascetur mauris non amet dis amet, urna mattis.
+                </p>
+                <form class="comment_form">
+                    <input type="text" class="comment_name" placeholder="name"/>
+                    <input type="text" class="comment_email" placeholder="email"/>
+                    <textarea class="comment_text" placeholder="Please insert a comment"></textarea>
+                    <input type="submit" class="btn"/>
+                </form>
+                <h2>Comments</h2>
+                <ul class="comments">
+                </ul>
+            </div>
+            
+        </div>
+    </body>
+</html>
