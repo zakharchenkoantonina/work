@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>To Do List - Final</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="handlebars-v4.0.5.js"></script> 
+        <script src="script.js"></script>
+        <script id="todo-template" type="text/x-handlebars-template">
+            <li>{{{toDo}}}  
+                 <a href="javascript:void(0)" class="delete">delete</a> 
+                 <button class="complete">complete</button>   
+            </li>
+        </script>  
+        <style>
+        .completed{
+            color:#999;
+            text-decoration: line-through;
+        }
+        </style>
+    </head>
+    <body>
+        <form id="new_task">
+            <input id="new_task_input"/>
+            <input type="submit" id="new_task_submit"/>
+        </form>
+        <ol id="task_list">
+
+        </ol>
+    </body>
+</html>
